@@ -18,6 +18,8 @@ a {
     position: absolute;
     left: 90px;
     top: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
@@ -26,7 +28,17 @@ a {
     color: #2f2e41;
     font-size: 2rem;
     letter-spacing: 1;
+    margin-left: 10px;
+    order: 2;
 }
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    order: 1;
+}
+
 
 .SearchArea {
     position: fixed;
@@ -126,26 +138,27 @@ span {
 
 }
 
-.btn:hover{
-   
-	color:#FFFFFF;
-	background-color: #6e64ff;
-	transition: all ease 0.5s;
+.btn:hover {
 
-} 
+    color: #FFFFFF;
+    background-color: #6e64ff;
+    transition: all ease 0.5s;
 
-.iconArea{
-    position:fixed;
+}
+
+.iconArea {
+    position: fixed;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 20px;
     background-color: #FFFFFF;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
     padding: 5px 0px;
     z-index: 1;
 }
-.iconArea a{
+
+.iconArea a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,23 +168,25 @@ span {
 }
 
 .iconArea a i {
-    color:rgba(39,39,39,0.80);
+    color: rgba(39, 39, 39, 0.80);
 }
 
-.iconArea a:hover .fa-facebook{
-    color:#3b5998;
-}
-.iconArea a:hover .fa-twitter{
-    color:#00acee;
-}
-.iconArea a:hover .fa-instagram{
-    color:#C13584;
-}
-.iconArea a:hover .fa-linkedin{
-    color:#0e76a8;
-}
-.iconArea a:hover .fa-youtube{
-    color:#E60023;
+.iconArea a:hover .fa-facebook {
+    color: #3b5998;
 }
 
+.iconArea a:hover .fa-twitter {
+    color: #00acee;
+}
 
+.iconArea a:hover .fa-instagram {
+    color: #C13584;
+}
+
+.iconArea a:hover .fa-linkedin {
+    color: #0e76a8;
+}
+
+.iconArea a:hover .fa-youtube {
+    color: #E60023;
+}
